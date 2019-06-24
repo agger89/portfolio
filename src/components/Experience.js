@@ -14,7 +14,10 @@ const Experience = memo(() => {
                     list: '서비스중인 2개의 프로젝트 프론트 개발'
                 },
                 {
-                    list: 'node 개발자와 협업'
+                    list: 'Webpack 초기 셋팅 경험'
+                },
+                {
+                    list: 'Component 구조 초기 셋팅 경험'
                 },
                 {
                     list: 'Tools: HTML // SCSS // JS // React, React-Redux'
@@ -34,7 +37,7 @@ const Experience = memo(() => {
                     list: '하이브리드 앱 웹뷰 프론트 개발'
                 },
                 {
-                    list: 'iOS, Android, Ruby 개발자와 협업'
+                    list: '처음 프레임워크(React)로 프론트 개발 시작'
                 },
                 {
                     list: 'Tools: HTML // SCSS // JS, jQuery // React, React-Redux, Redux-Saga'

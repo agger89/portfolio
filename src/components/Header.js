@@ -90,7 +90,6 @@ const Header = memo((props) => {
 
     // scroll event
     const _handleScroll = throttle(() => {
-        console.log(1);
         $('.target').each(function() {
             if($(window).scrollTop() >= $(this).offset().top - 300) {
                 var id = $(this).attr('id');
