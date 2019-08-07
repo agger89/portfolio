@@ -29,12 +29,20 @@ const Skills = memo(() => {
                     image: 'sass.png'
                 },
                 {
+                    title: 'Styled Components',
+                    image: 'styledcomponents.png'
+                },
+                {
                     title: 'Bootstrap',
                     image: 'bootstrap.png'
                 },
                 {
                     title: 'Materialize',
                     image: 'materialize.png'
+                },
+                {
+                    title: 'Ant Design',
+                    image: 'antdesign.png'
                 },
             ]
         },
@@ -58,6 +66,10 @@ const Skills = memo(() => {
                     title: 'React-Redux',
                     image: 'redux.png'
                 },
+                {
+                    title: 'Redux-Saga',
+                    image: 'reduxsaga.png'
+                },
             ]
         },
         {
@@ -79,6 +91,10 @@ const Skills = memo(() => {
                 {
                     title: 'Github',
                     image: 'github.png'
+                },
+                {
+                    title: 'AWS S3',
+                    image: 'awss3.png'
                 },
                 {
                     title: 'Photoshop',

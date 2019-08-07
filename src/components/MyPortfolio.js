@@ -38,7 +38,7 @@ const MyPortfolio = () => {
                             개발 스터디 모임 참여를 좋아하고, 새로운 언어에 대한 끊임없는 학습을 통해 성장하는 개발자입니다.
                         </p>
                         <div className="bottom-title">
-                            <strong>Current Focus</strong>: <span>Redux-Saga</span> // <span>React Styled Components</span>
+                            <strong>Current Focus</strong>: <span>NextJS(SSR, SEO, Code Splitting)</span> // <span>React Hooks</span> // <span>React Styled Components</span>
                         </div>
                     </div>
                 </div>

@@ -14,10 +14,16 @@ const Experience = memo(() => {
                     list: '서비스중인 2개의 프로젝트 프론트 개발'
                 },
                 {
-                    list: 'Webpack 초기 셋팅 경험'
+                    list: 'webpack 초기 셋팅'
                 },
                 {
-                    list: 'Component 구조 초기 셋팅 경험'
+                    list: 'component 초기 셋팅'
+                },
+                {
+                    list: 'React-Redux로 동기적 state 관리'
+                },
+                {
+                    list: 'react-intl 패키지로 4개 언어 적용'
                 },
                 {
                     list: 'Tools: HTML // SCSS // JS // React, React-Redux'
@@ -34,10 +40,13 @@ const Experience = memo(() => {
             workTitle: '퍼블리싱 및 프론트엔드 개발',
             workLists: [
                 {
-                    list: '하이브리드 앱 웹뷰 프론트 개발'
+                    list: '라이브 퀴즈쇼 문제 셋팅 페이지 프론트 개발'
                 },
                 {
-                    list: '처음 프레임워크(React)로 프론트 개발 시작'
+                    list: 'React-Redux로 동기적 state 관리'
+                },
+                {
+                    list: 'Redux-Saga로 API 비동기적 통신'
                 },
                 {
                     list: 'Tools: HTML // SCSS // JS, jQuery // React, React-Redux, Redux-Saga'

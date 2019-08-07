@@ -4,6 +4,28 @@ const Projects = memo(() => {
     const projects = [
         {
             num: 1,
+            image: 'nextPortfolio.png',
+            title: '개인 프로젝트',
+            text: 'React(NextJS)로 만든 twitter 사이트',
+            workLists: [
+                {
+                    list: '기능 - 회원가입, 로그인, 로그아웃, 해시태그 검색, 리트윗, 팔로우, 언팔로우, 글 등록, 글 삭제, 댓글 등록, 좋아요, 이미지 업로드, 닉네임 변경, 이미지 슬라이드, 인피니트 스크롤링, 페이지네이션'
+                },
+                {
+                    list: <span>프론트 - <b>NextJS(SSR), React Hooks, Redux, Redux-Saga, JSX, Styled Components, Ant Design</b></span> 
+                },
+                {
+                    list: <span>백엔드 - <b>Node, Express, Sequelize(MySQL)</b></span>
+                },
+                {
+                    list: <span>배포 - <b>AWS(EC2, Lambda, S3, Route53)</b></span>
+                },
+            ],
+            link1: 'http://starcho.com',
+            link2: 'https://github.com/agger89/choWitter',
+        },
+        {
+            num: 2,
             image: 'aipe.png',
             title: 'aipe',
             text: 'aipe 코인 및 회사소개 사이트',
@@ -15,14 +37,14 @@ const Projects = memo(() => {
                     list: <span><b>react-intl</b> 패키지로 언어 적용</span>
                 },
                 {
-                    list: <span><b>SCSS</b> 를 이용하여 <b>HTML</b> 스타일링</span>
+                    list: <span><b>SCSS</b> 를 이용하여 <b>마크업</b> 스타일링</span>
                 },
             ],
             link1: 'https://www.aipe.io',
             link2: '',
         },
         {
-            num: 2,
+            num: 3,
             image: '3piks.png',
             title: '3piks',
             text: 'ai를 이용한 코인 예측 사이트',
@@ -31,26 +53,26 @@ const Projects = memo(() => {
                     list: <span><b>Creact React App</b>으로 프로젝트 생성 후 개발</span> 
                 },
                 {
-                    list: <span><b>React-Redux</b>로 데이터 통신 및 관리</span>
+                    list: <span><b>React-Redux</b>로 동기적 state 관리</span>
                 },
                 {
-                    list: <span><b>SCSS</b> 를 이용하여 <b>HTML</b> 스타일링</span>
+                    list: <span><b>SCSS</b> 를 이용하여 <b>마크업</b> 스타일링</span>
                 }
             ],
             link1: 'https://www.3piks.com',
             link2: '',
         },
         {
-            num: 3,
+            num: 4,
             image: 'reactPortfolio.png',
             title: '개인 프로젝트',
-            text: 'react로 만든 Instagram 사이트',
+            text: 'React로 만든 Instagram 사이트',
             workLists: [
                 {
                     list: '기능 - 팔로우, 언팔로우, 댓글 등록, 좋아요'
                 },
                 {
-                    list: <span>프론트 - <b>HTML, SCSS, React, React-Redux</b></span> 
+                    list: <span>프론트 - <b>HTML, JSX, SCSS, React, React-Redux</b></span> 
                 },
                 {
                     list: <span>배포 - <b>firebase</b></span>
@@ -60,32 +82,35 @@ const Projects = memo(() => {
             link2: 'https://github.com/agger89/portfolioREACT',
         },
         {
-            num: 4,
+            num: 5,
             image: 'puff.png',
             title: '퍼프(PUFF) - 모바일 라이브',
-            text: '라이브 퀴즈쇼 및 라이브 방송 하이브리드 앱',
+            text: '라이브 퀴즈쇼 하이브리드 앱',
             workLists: [
                 {
-                    list: <span><b>React</b>로 라이브 퀴즈쇼 프론트 개발 <b>(WebView)</b></span>
+                    list: <span>문제 셋팅 페이지 프론트 개발 <b>(WebView)</b></span>
                 },
                 {
-                    list: <span><b>React-Redux, Redux-Saga</b>로 비동기처리 및 데이터 관리</span>
+                    list: <span><b>React-Redux</b>로 동기적 state 관리</span>
                 },
                 {
-                    list: <span><b>SCSS</b>를 이용하여 <b>HTML</b> 스타일링</span>
+                    list: <span><b>Redux-Saga</b>로 API 비동기적 통신</span>
+                },
+                {
+                    list: <span><b>SCSS</b>를 이용하여 <b>마크업</b> 스타일링</span>
                 },
             ],
             link1: 'https://itunes.apple.com/kr/app/%ED%8D%BC%ED%94%84-puff-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EB%9D%BC%EC%9D%B4%EB%B8%8C/id1227663743?mt=8',
             link2: '',
         },
         {
-            num: 5,
+            num: 6,
             image: 'phpPortfolio.png',
             title: '개인 프로젝트',
             text: 'php 기반으로 만든 Instagram 사이트',
             workLists: [
                 {
-                    list: '기능 - 회원가입, 로그인, 팔로우, 언팔로우, 글 등록, 글 삭제, 댓글 등록, 댓글 삭제, 좋아요, 이미지 업로드, 프로필 변경, 유저 활동 실시간 알림'
+                    list: '기능 - 회원가입, 로그인, 로그아웃, 팔로우, 언팔로우, 글 등록, 글 삭제, 댓글 등록, 댓글 삭제, 좋아요, 이미지 업로드, 프로필 변경, 유저 활동 실시간 알림'
                 },
                 {
                     list: <span>프론트 - <b>HTML, SCSS, Javascript, jQuery</b></span> 
@@ -104,7 +129,7 @@ const Projects = memo(() => {
             link2: 'https://github.com/agger89/portfolioPHP',
         },
         {
-            num: 6,
+            num: 7,
             image: 'travelmap.png',
             title: 'TRAVELMAP',
             text: '전세계 호텔, 항공, 렌터카, 여행 가격비교 사이트',
@@ -116,14 +141,14 @@ const Projects = memo(() => {
                     list: <span><b>Javascript, jQuery</b>를 이용하여 데이터 통신 및 동적 효과 구현</span>
                 },
                 {
-                    list: <span><b>CSS</b>를 이용하여 <b>HTML</b> 스타일링</span>
+                    list: <span><b>CSS</b>를 이용하여 <b>마크업</b> 스타일링</span>
                 }
             ],
             link1: 'http://www.travelmap.co.kr',
             link2: '',
         },
         {
-            num: 7,
+            num: 8,
             image: 'mobileappliance.png',
             title: 'Mobile Appliance',
             text: '자동차 솔루션 기업 사이트',
@@ -135,7 +160,7 @@ const Projects = memo(() => {
                     list: <span><b>Javascript, jQuery</b>를 이용하여 데이터 통신 및 동적 효과 구현</span>
                 },
                 {
-                    list: <span><b>CSS</b>를 이용하여 <b>HTML</b> 스타일링</span>
+                    list: <span><b>CSS</b>를 이용하여 <b>마크업</b> 스타일링</span>
                 }
             ],
             icon1: 'NOICON',
@@ -144,7 +169,7 @@ const Projects = memo(() => {
             link2: '',
         },
         {
-            num: 8,
+            num: 9,
             image: 'pontus.png',
             title: 'PONTUS',
             text: '블랙박스 소개 및 고객센터 사이트',
@@ -156,14 +181,14 @@ const Projects = memo(() => {
                     list: <span><b>Javascript, jQuery</b>를 이용하여 데이터 통신 및 동적 효과 구현</span>
                 },
                 {
-                    list: <span><b>CSS</b>를 이용하여 <b>HTML</b> 스타일링</span>
+                    list: <span><b>CSS</b>를 이용하여 <b>마크업</b> 스타일링</span>
                 }
             ],
             link1: 'http://www.pontus.co.kr',
             link2: '',
         },
         {
-            num: 9,
+            num: 10,
             image: 'sarahan.png',
             title: 'Sarahan',
             text: '화장품 소개 및 판매 사이트',
@@ -175,14 +200,14 @@ const Projects = memo(() => {
                     list: <span><b>Javascript, jQuery</b>를 이용하여 데이터 통신 및 동적 효과 구현</span>
                 },
                 {
-                    list: <span><b>CSS</b>를 이용하여 <b>HTML</b> 스타일링</span>
+                    list: <span><b>CSS</b>를 이용하여 <b>마크업</b> 스타일링</span>
                 }
             ],
             link1: 'http://www.sarahan.kr',
             link2: '',
         },
         {
-            num: 10,
+            num: 11,
             image: 'dental.png',
             title: '문치과병원',
             text: '병원소개 및 예약 사이트',
@@ -194,14 +219,14 @@ const Projects = memo(() => {
                     list: <span><b>Javascript, jQuery</b>를 이용하여 데이터 통신 및 동적 효과 구현</span>
                 },
                 {
-                    list: <span><b>CSS</b>를 이용하여 <b>HTML</b> 스타일링</span>
+                    list: <span><b>CSS</b>를 이용하여 <b>마크업</b> 스타일링</span>
                 }
             ],
             link1: 'http://www.moondh.co.kr',
             link2: '',
         },
         {
-            num: 11,
+            num: 12,
             image: 'kwhoney.png',
             title: '자연에 쉼',
             text: '벌꿀소개 및 판매 사이트',
@@ -213,7 +238,7 @@ const Projects = memo(() => {
                     list: <span><b>Javascript, jQuery</b>를 이용하여 데이터 통신 및 동적 효과 구현</span>
                 },
                 {
-                    list: <span><b>CSS</b>를 이용하여 <b>HTML</b> 스타일링</span>
+                    list: <span><b>CSS</b>를 이용하여 <b>마크업</b> 스타일링</span>
                 }
             ],
             link1: 'http://www.kwhoney.kr',
