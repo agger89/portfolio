@@ -70,6 +70,14 @@ const Skills = memo(() => {
                     title: 'Redux-Saga',
                     image: 'reduxsaga.png'
                 },
+                {
+                    title: 'Apollo-Client',
+                    image: 'apollo.png'
+                },
+                {
+                    title: 'Typescript',
+                    image: 'typescript.png'
+                },
             ]
         },
         {
@@ -91,10 +99,6 @@ const Skills = memo(() => {
                 {
                     title: 'Github',
                     image: 'github.png'
-                },
-                {
-                    title: 'AWS S3',
-                    image: 'awss3.png'
                 },
                 {
                     title: 'Photoshop',

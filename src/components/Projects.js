@@ -3,7 +3,54 @@ import React, { memo, useState } from 'react';
 const Projects = memo(() => {
     const projects = [
         {
-            num: 1,
+            image: 'passcheck.jpg',
+            title: '강사소개 리스트',
+            text: '배너 슬라이드와 탭을 이용한 강사소개 리스트',
+            workLists: [
+                {
+                    list: <span>클라이언트<b>(Apollo-Client)</b>, 어드민<b>(React-Admin)</b> 개발</span>
+                },
+                {
+                    list: <span><b>[클라이언트, 어드민 기능]</b> <br />탭별 강사 추가 및 삭제, 강사 순서 변경, 강사 이미지 및 링크 등록 가능</span>
+                },
+                {
+                    list: <span>기술 스택 - <b>React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI</b></span> 
+                },
+            ],
+            link1: 'http://next.weport.co.kr/pass-check',
+        },
+        {
+            image: 'passcheck.jpg',
+            title: '프리패스 타이머',
+            text: '유저에게 수강신청 마감일자와 기수를 보여주는 타이머',
+            workLists: [
+                {
+                    list: <span>클라이언트<b>(Apollo-Client)</b>, 어드민<b>(React-Admin)</b> 개발</span>
+                },
+                {
+                    list: <span><b>[클라이언트, 어드민 기능]</b> <br />기수 자동 업데이트 및 자동 업데이트 멈춤, 타이머 날짜 시간 설정</span>
+                },
+                {
+                    list: <span>기술 스택 - <b>React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI</b></span> 
+                },
+            ],
+            link1: 'http://next.weport.co.kr/pass-check',
+        },
+        {
+            image: 'passcheck.jpg',
+            title: '실력점검 + 합격예측',
+            text: '시험 본 유저가 본인의 정답을 맞춰보고, 시험의 평균점수등을 확인하는 서비스',
+            workLists: [
+                {
+                    list: 'React-Admin Framework를 이용하여 만든 어드민 페이지와 연동되어 데이터 관리가 가능함'
+                },
+                {
+                    list: <span>기술 스택 - <b>React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI</b></span> 
+                },
+            ],
+            link1: 'http://next.weport.co.kr/pass-check',
+        },
+        {
             image: 'nextPortfolio.png',
             title: '개인 프로젝트',
             text: 'React(NextJS)로 만든 twitter 사이트',
@@ -12,7 +59,7 @@ const Projects = memo(() => {
                     list: '기능 - 회원가입, 로그인, 로그아웃, 해시태그 검색, 리트윗, 팔로우, 언팔로우, 글 등록, 글 삭제, 댓글 등록, 좋아요, 이미지 업로드, 닉네임 변경, 이미지 슬라이드, 인피니트 스크롤링, 페이지네이션'
                 },
                 {
-                    list: <span>프론트 - <b>NextJS(SSR), React Hooks, Redux, Redux-Saga, JSX, Styled Components, Ant Design</b></span> 
+                    list: <span>프론트 - <b>NextJS(SSR), React Hooks, Redux, Redux-Saga, Styled Components, Ant Design</b></span> 
                 },
                 {
                     list: <span>백엔드 - <b>Node, Express, Sequelize(MySQL)</b></span>
@@ -25,13 +72,12 @@ const Projects = memo(() => {
             link2: 'https://github.com/agger89/choWitter',
         },
         {
-            num: 2,
             image: 'aipe.png',
             title: 'aipe',
-            text: 'aipe 코인 및 회사소개 사이트',
+            text: 'aipe 코인 및 회사소개 사이트 (현재 서비스 중지)',
             workLists: [
                 {
-                    list: <span><b>Creact React App 2.0</b>으로 프로젝트 생성 후 개발</span> 
+                    list: <span><b>Creact React App</b>을 이용해 프로젝트 생성 후 개발</span> 
                 },
                 {
                     list: <span><b>react-intl</b> 패키지로 언어 적용</span>
@@ -44,16 +90,15 @@ const Projects = memo(() => {
             link2: '',
         },
         {
-            num: 3,
             image: '3piks.png',
             title: '3piks',
-            text: 'ai를 이용한 코인 예측 사이트',
+            text: 'ai를 이용한 코인 예측 사이트 (현재 서비스 중지)',
             workLists: [
                 {
-                    list: <span><b>Creact React App</b>으로 프로젝트 생성 후 개발</span> 
+                    list: <span><b>Creact React App</b>을 이용해 프로젝트 생성 후 개발</span> 
                 },
                 {
-                    list: <span><b>React-Redux</b>로 동기적 state 관리</span>
+                    list: <span><b>redux</b>이용하여 상태 관리</span>
                 },
                 {
                     list: <span><b>SCSS</b> 를 이용하여 <b>마크업</b> 스타일링</span>
@@ -63,7 +108,6 @@ const Projects = memo(() => {
             link2: '',
         },
         {
-            num: 4,
             image: 'reactPortfolio.png',
             title: '개인 프로젝트',
             text: 'React로 만든 Instagram 사이트',
@@ -72,7 +116,7 @@ const Projects = memo(() => {
                     list: '기능 - 팔로우, 언팔로우, 댓글 등록, 좋아요'
                 },
                 {
-                    list: <span>프론트 - <b>HTML, JSX, SCSS, React, React-Redux</b></span> 
+                    list: <span>프론트 - <b>React, SCSS, React-Redux</b></span> 
                 },
                 {
                     list: <span>배포 - <b>firebase</b></span>
@@ -82,7 +126,6 @@ const Projects = memo(() => {
             link2: 'https://github.com/agger89/portfolioREACT',
         },
         {
-            num: 5,
             image: 'puff.png',
             title: '퍼프(PUFF) - 모바일 라이브',
             text: '라이브 퀴즈쇼 하이브리드 앱',
@@ -91,10 +134,10 @@ const Projects = memo(() => {
                     list: <span>문제 셋팅 페이지 프론트 개발 <b>(WebView)</b></span>
                 },
                 {
-                    list: <span><b>React-Redux</b>로 동기적 state 관리</span>
+                    list: <span><b>React-Redux</b>를 이용하여 상태 관리</span>
                 },
                 {
-                    list: <span><b>Redux-Saga</b>로 API 비동기적 통신</span>
+                    list: <span><b>Redux-Saga</b>를 이용하여 비동기 상태 관리</span>
                 },
                 {
                     list: <span><b>SCSS</b>를 이용하여 <b>마크업</b> 스타일링</span>
@@ -104,7 +147,6 @@ const Projects = memo(() => {
             link2: '',
         },
         {
-            num: 6,
             image: 'phpPortfolio.png',
             title: '개인 프로젝트',
             text: 'php 기반으로 만든 Instagram 사이트',
@@ -129,7 +171,6 @@ const Projects = memo(() => {
             link2: 'https://github.com/agger89/portfolioPHP',
         },
         {
-            num: 7,
             image: 'travelmap.png',
             title: 'TRAVELMAP',
             text: '전세계 호텔, 항공, 렌터카, 여행 가격비교 사이트',
@@ -148,7 +189,6 @@ const Projects = memo(() => {
             link2: '',
         },
         {
-            num: 8,
             image: 'mobileappliance.png',
             title: 'Mobile Appliance',
             text: '자동차 솔루션 기업 사이트',
@@ -169,7 +209,6 @@ const Projects = memo(() => {
             link2: '',
         },
         {
-            num: 9,
             image: 'pontus.png',
             title: 'PONTUS',
             text: '블랙박스 소개 및 고객센터 사이트',
@@ -188,7 +227,6 @@ const Projects = memo(() => {
             link2: '',
         },
         {
-            num: 10,
             image: 'sarahan.png',
             title: 'Sarahan',
             text: '화장품 소개 및 판매 사이트',
@@ -207,7 +245,6 @@ const Projects = memo(() => {
             link2: '',
         },
         {
-            num: 11,
             image: 'dental.png',
             title: '문치과병원',
             text: '병원소개 및 예약 사이트',
@@ -226,7 +263,6 @@ const Projects = memo(() => {
             link2: '',
         },
         {
-            num: 12,
             image: 'kwhoney.png',
             title: '자연에 쉼',
             text: '벌꿀소개 및 판매 사이트',
@@ -260,14 +296,14 @@ const Projects = memo(() => {
                     return (
                         <div className="col s12 m6 l4" key={i}>
                             <div className="card medium">
-                                <div className="card-image waves-effect waves-block waves-light" style={{ backgroundImage: 'url(' + require(`../images/${project.image}`) + ')' }} onClick={() => handleTransformShow(project.num)} />
+                                <div className="card-image waves-effect waves-block waves-light" style={{ backgroundImage: 'url(' + require(`../images/${project.image}`) + ')' }} onClick={() => handleTransformShow(i + 1)} />
                                 <div className="card-content">
                                     <span className="card-title activator teal-text">
-                                        {project.title}<i className="mdi-navigation-more-vert right" onClick={() => handleTransformShow(project.num)} />
+                                        {project.title}<i className="mdi-navigation-more-vert right" onClick={() => handleTransformShow(i + 1)} />
                                     </span>
                                     <p>{project.text}</p>
                                 </div>
-                                <div className={`card-reveal ${activeTransform === project.num ? 'active' : ''}`}>
+                                <div className={`card-reveal ${activeTransform === i + 1 ? 'active' : ''}`}>
                                     <span className="card-title brown-text">
                                         Accomplishments<i className="mdi-navigation-close right" onClick={handleTransformHide} />
                                     </span>

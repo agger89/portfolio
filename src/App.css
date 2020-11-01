@@ -232,11 +232,8 @@
     width: 60px;
     height: 60px;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-}
-.experience .content-wrap:nth-child(2) .title-wrap .image {
-    background-size: 140%;
 }
 .experience .content-wrap .title-wrap .role {
     position: absolute;

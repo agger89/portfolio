@@ -1,9 +1,32 @@
-import React, { memo, useState } from 'react';
+import React, { memo } from 'react';
 
 const Experience = memo(() => {
     const contents = [
         {
             num: 1,
+            image: 'linkareer.png',
+            company: '링커리어',
+            link: 'https://specupad.com',
+            position: 'Front-End Developer',
+            workTitle: '프론트엔드 개발',
+            workLists: [
+                {
+                    list: 'React-Admin Framework를 이용해 관리자 페이지 클라이언트 개발'
+                },
+                {
+                    list: '기존 html, jquery로 되어있는 클라이언트 페이지 react로 재구현'
+                },
+                {
+                    list: 'apollo-client 이용하여 클라이언트 개발'
+                },
+                {
+                    list: <span>Tools:<b> React, Apollo-Client, Typescript, React Hook, Material-UI</b></span>
+                }
+            ],
+            date: '2019.08 - 2020.12 | 서울시 강남구'
+        },
+        {
+            num: 2,
             image: 'neuralbc.jpg',
             company: 'Neural BC',
             link: 'http://www.neuralbc.com',
@@ -11,28 +34,22 @@ const Experience = memo(() => {
             workTitle: '프론트엔드 개발',
             workLists: [
                 {
-                    list: '서비스중인 2개의 프로젝트 프론트 개발'
+                    list: '회사 초기 프로젝트 클라이언트 개발'
                 },
                 {
-                    list: 'webpack 초기 셋팅'
-                },
-                {
-                    list: 'component 초기 셋팅'
-                },
-                {
-                    list: 'React-Redux로 동기적 state 관리'
+                    list: 'redux를 이용한 상태 관리'
                 },
                 {
                     list: 'react-intl 패키지로 4개 언어 적용'
                 },
                 {
-                    list: 'Tools: HTML // SCSS // JS // React, React-Redux'
+                    list: <span>Tools: <b>HTML, SCSS, JS, React, React-Redux</b></span>
                 }
             ],
             date: '2018.10 - 2019.04 | 서울시 강남구'
         },
         {
-            num: 2,
+            num: 3,
             image: 'starship.jpg',
             company: 'Starship Vending-machine corp.',
             link: 'https://www.insertcoin.me',
@@ -40,22 +57,22 @@ const Experience = memo(() => {
             workTitle: '퍼블리싱 및 프론트엔드 개발',
             workLists: [
                 {
-                    list: '라이브 퀴즈쇼 문제 셋팅 페이지 프론트 개발'
+                    list: '라이브 퀴즈쇼 문제 셋팅 페이지 클라이언트 개발'
                 },
                 {
-                    list: 'React-Redux로 동기적 state 관리'
+                    list: 'redux를 이용한 상태 관리'
                 },
                 {
-                    list: 'Redux-Saga로 API 비동기적 통신'
+                    list: 'redux-saga를 이용한 비동기 상태 관리'
                 },
                 {
-                    list: 'Tools: HTML // SCSS // JS, jQuery // React, React-Redux, Redux-Saga'
+                    list: <span>Tools: <b>HTML, SCSS, JS, React, React-Redux, Redux-Saga</b></span>
                 }
             ],
             date: '2018.04 - 2018.08 | 서울시 마포구'
         },
         {
-            num: 3,
+            num: 4,
             image: 'reconers.png',
             company: 'Reconers',
             link: 'https://www.reconers.com',
@@ -63,13 +80,13 @@ const Experience = memo(() => {
             workTitle: '퍼블리싱 및 프론트엔드 개발',
             workLists: [
                 {
-                    list: '퍼블리셔로 처음 웹개발 시작'
+                    list: '정적 페이지 퍼블리싱'
                 },
                 {
-                    list: 'PHP 기반으로 된 다수의 프로젝트 퍼블리싱'
+                    list: 'PHP를 이용해 클라이언트 데이터 연결하여 클라이언트 개발'
                 },
                 {
-                    list: 'Tools: HTML // CSS // JS, jQuery // PHP'
+                    list: <span>Tools: <b>HTML, JS, jQuery, PHP</b></span>
                 }
             ],
             date: '2017.02 - 2017.09 | 서울시 강남구'
