@@ -16,7 +16,7 @@ export const recentData = [
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    viewOnSite: 'http://next.weport.co.kr/pass-check',
+    link: 'http://next.weport.co.kr/pass-check',
     createdAt: 2020,
   },
   {
@@ -36,7 +36,7 @@ export const recentData = [
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    viewOnSite: 'http://next.weport.co.kr/pass-check',
+    link: 'http://next.weport.co.kr/pass-check',
     createdAt: 2020,
   },
   {
@@ -54,7 +54,7 @@ export const recentData = [
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    viewOnSite: 'http://next.weport.co.kr/pass-check',
+    link: 'http://next.weport.co.kr/pass-check',
     createdAt: 2019,
   },
   {
@@ -77,7 +77,7 @@ export const recentData = [
         list: '배포 - AWS(EC2, Lambda, S3, Route53)',
       },
     ],
-    viewOnSite: 'http://starcho.com',
+    link: 'http://starcho.com',
     createdAt: 2019,
     viewOnGithub: 'https://github.com/agger89/choWitter',
   },
@@ -96,7 +96,7 @@ export const recentData = [
         list: 'SCSS 를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite: 'https://www.aipe.io',
+    link: 'https://www.aipe.io',
     createdAt: 2019,
   },
   {
@@ -114,7 +114,7 @@ export const recentData = [
         list: 'SCSS 를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite: 'https://www.3piks.com',
+    link: 'https://www.3piks.com',
     createdAt: 2018,
   },
   {
@@ -132,7 +132,7 @@ export const recentData = [
         list: '배포 - firebase',
       },
     ],
-    viewOnSite: 'https://instareact-25862.firebaseapp.com',
+    link: 'https://instareact-25862.firebaseapp.com',
     createdAt: 2018,
     viewOnGithub: 'https://github.com/agger89/portfolioREACT',
   },
@@ -154,7 +154,7 @@ export const recentData = [
         list: 'SCSS를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite:
+    link:
       'https://itunes.apple.com/kr/app/%ED%8D%BC%ED%94%84-puff-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EB%9D%BC%EC%9D%B4%EB%B8%8C/id1227663743?mt=8',
     createdAt: 2018,
   },
@@ -181,7 +181,7 @@ export const recentData = [
         list: '루트계정 - ID: root@gmail.com / PW: 11111111',
       },
     ],
-    viewOnSite: 'http://whcnddms1.cafe24.com',
+    link: 'http://whcnddms1.cafe24.com',
     createdAt: 2017,
     viewOnGithub: 'https://github.com/agger89/portfolioPHP',
   },
@@ -201,7 +201,7 @@ export const recentData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite: 'http://www.travelmap.co.kr',
+    link: 'http://www.travelmap.co.kr',
     createdAt: 2017,
   },
   {
@@ -222,7 +222,7 @@ export const recentData = [
     ],
     icon1: 'NOICON',
     icon2: 'NOICON',
-    viewOnSite: 'http://www.mobileappliance.co.kr',
+    link: 'http://www.mobileappliance.co.kr',
     createdAt: 2017,
   },
   {
@@ -241,7 +241,7 @@ export const recentData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite: 'http://www.pontus.co.kr',
+    link: 'http://www.pontus.co.kr',
     createdAt: 2017,
   },
   {
@@ -260,7 +260,7 @@ export const recentData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite: 'http://www.sarahan.kr',
+    link: 'http://www.sarahan.kr',
     createdAt: 2017,
   },
   {
@@ -279,7 +279,7 @@ export const recentData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite: 'http://www.moondh.co.kr',
+    link: 'http://www.moondh.co.kr',
     createdAt: 2017,
   },
   {
@@ -298,7 +298,7 @@ export const recentData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite: 'http://www.kwhoney.kr',
+    link: 'http://www.kwhoney.kr',
     createdAt: 2017,
   },
 ]
@@ -321,7 +321,7 @@ export const reactData = [
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    viewOnSite: 'http://next.weport.co.kr/pass-check',
+    link: 'http://next.weport.co.kr/pass-check',
     createdAt: 2020,
   },
   {
@@ -341,7 +341,7 @@ export const reactData = [
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    viewOnSite: 'http://next.weport.co.kr/pass-check',
+    link: 'http://next.weport.co.kr/pass-check',
     createdAt: 2020,
   },
   {
@@ -359,7 +359,7 @@ export const reactData = [
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    viewOnSite: 'http://next.weport.co.kr/pass-check',
+    link: 'http://next.weport.co.kr/pass-check',
     createdAt: 2019,
   },
   {
@@ -382,7 +382,7 @@ export const reactData = [
         list: '배포 - AWS(EC2, Lambda, S3, Route53)',
       },
     ],
-    viewOnSite: 'http://starcho.com',
+    link: 'http://starcho.com',
     createdAt: 2019,
     viewOnGithub: 'https://github.com/agger89/choWitter',
   },
@@ -401,7 +401,7 @@ export const reactData = [
         list: 'SCSS 를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite: 'https://www.aipe.io',
+    link: 'https://www.aipe.io',
     createdAt: 2019,
   },
   {
@@ -419,7 +419,7 @@ export const reactData = [
         list: 'SCSS 를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite: 'https://www.3piks.com',
+    link: 'https://www.3piks.com',
     createdAt: 2018,
   },
   {
@@ -437,7 +437,7 @@ export const reactData = [
         list: '배포 - firebase',
       },
     ],
-    viewOnSite: 'https://instareact-25862.firebaseapp.com',
+    link: 'https://instareact-25862.firebaseapp.com',
     createdAt: 2018,
     viewOnGithub: 'https://github.com/agger89/portfolioREACT',
   },
@@ -459,7 +459,7 @@ export const reactData = [
         list: 'SCSS를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite:
+    link:
       'https://itunes.apple.com/kr/app/%ED%8D%BC%ED%94%84-puff-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EB%9D%BC%EC%9D%B4%EB%B8%8C/id1227663743?mt=8',
     createdAt: 2018,
   },
@@ -489,7 +489,7 @@ export const htmlData = [
         list: '루트계정 - ID: root@gmail.com / PW: 11111111',
       },
     ],
-    viewOnSite: 'http://whcnddms1.cafe24.com',
+    link: 'http://whcnddms1.cafe24.com',
     createdAt: 2017,
     viewOnGithub: 'https://github.com/agger89/portfolioPHP',
   },
@@ -509,7 +509,7 @@ export const htmlData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite: 'http://www.travelmap.co.kr',
+    link: 'http://www.travelmap.co.kr',
     createdAt: 2017,
   },
   {
@@ -530,7 +530,7 @@ export const htmlData = [
     ],
     icon1: 'NOICON',
     icon2: 'NOICON',
-    viewOnSite: 'http://www.mobileappliance.co.kr',
+    link: 'http://www.mobileappliance.co.kr',
     createdAt: 2017,
   },
   {
@@ -549,7 +549,7 @@ export const htmlData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite: 'http://www.pontus.co.kr',
+    link: 'http://www.pontus.co.kr',
     createdAt: 2017,
   },
   {
@@ -568,7 +568,7 @@ export const htmlData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite: 'http://www.sarahan.kr',
+    link: 'http://www.sarahan.kr',
     createdAt: 2017,
   },
   {
@@ -587,7 +587,7 @@ export const htmlData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite: 'http://www.moondh.co.kr',
+    link: 'http://www.moondh.co.kr',
     createdAt: 2017,
   },
   {
@@ -606,7 +606,7 @@ export const htmlData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    viewOnSite: 'http://www.kwhoney.kr',
+    link: 'http://www.kwhoney.kr',
     createdAt: 2017,
   },
 ]

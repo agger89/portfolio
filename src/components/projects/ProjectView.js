@@ -162,7 +162,7 @@ const ProjectsView = ({ data }) => {
           <div className={classes.linkBlock}>
             <a
               className={classes.link}
-              href={content.viewOnSite}
+              href={content.link}
               target="_blank"
               rel="noopener noreferrer"
             >
