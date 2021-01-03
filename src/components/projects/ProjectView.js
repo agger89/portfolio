@@ -41,9 +41,9 @@ const useStyles = makeStyles({
     marginBottom: 14,
     wordBreak: 'keep-all',
   },
-  createdAt: {
+  date: {
     fontSize: 13,
-    color: '#686E78',
+    color: '#686E78 !important',
   },
   imageBlock: {
     height: 158,
@@ -148,13 +148,17 @@ const ProjectsView = ({ data }) => {
         <div className={classes.textBlock}>
           <div className={classes.name}>{content.name}</div>
           <div className={classes.description}>{content.description}</div>
-          <div className={classes.createdAt}>Created in {content.createdAt}</div>
+          <div className={classes.date}>Created in {content.createdAt}</div>
         </div>
         <div className={classes.imageBlock}>
           <span
             className={classes.image}
             style={{
               backgroundImage: `url(/static/projects/${content.imageUrl})`,
+              backgroundSize:
+                content.name === '프리패스 타이머' ? 'contain' : 'cover',
+              backgroundPosition:
+                content.name === '프리패스 타이머' ? 'center' : 'top center',
             }}
           />
         </div>
