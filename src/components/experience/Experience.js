@@ -2,7 +2,6 @@ import React from 'react'
 
 import { withStyles, makeStyles } from '@material-ui/core/styles'
 import { Grid, Paper, Typography, Tooltip } from '@material-ui/core'
-import { Pageview as PageviewIcon } from '@material-ui/icons'
 
 import { data } from './data'
 
@@ -71,46 +70,27 @@ const useStyles = makeStyles({
     marginBottom: 10,
     color: '#fff',
   },
-  work: {
+  workListBlock: {
     display: 'flex',
     flexDirection: 'column',
     marginRight: 14,
     fontSize: 14,
     color: '#686e78',
-    '& > span': {
-      display: 'block',
-      marginBottom: 6,
-    },
+  },
+  work: {
+    display: 'block',
+    marginBottom: 6,
   },
   date: {
     marginRight: 20,
     fontSize: 14,
     color: '#686e78',
   },
-  bottomIconBlock: {
-    position: 'relative',
-    width: 30,
-    padding: '0 !important',
-    fontSize: 0,
-    '&:hover': {
-      '& span': {
-        display: 'block',
-      },
-    },
-  },
-  bottomIcon: {
-    fontSize: 30,
-    color: '#A9ABB3',
-    '&:hover': {
-      color: '#fff',
-    },
-  },
 })
 
 const Experience = () => {
   const classes = useStyles()
 
-  console.log('data', data)
   return (
     <>
       <div className={classes.title}>Work Experience</div>
@@ -142,9 +122,14 @@ const Experience = () => {
                         {content.position}
                       </Typography>
                       <Grid item xs={12} sm container>
-                        <Typography variant="body2" className={classes.work}>
-                          {content.workLists.map((item, i) => (
-                            <span>- {item.list}</span>
+                        <Typography
+                          variant="body2"
+                          className={classes.workListBlock}
+                        >
+                          {content.workLists.map((work, i) => (
+                            <span className={classes.work} key={i}>
+                              - {work.list}
+                            </span>
                           ))}
                         </Typography>
                       </Grid>
