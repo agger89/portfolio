@@ -1,13 +1,6 @@
-import React, { Component } from 'react';
-import MyPortfolio from './components/MyPortfolio';
-import './App.css';
+import React from 'react'
+import MyPortfolio from './components/Portfolio'
 
-class App extends Component {
-    render() {
-        return (
-            <MyPortfolio />
-        )
-    }
-}
+const App = () => <MyPortfolio />
 
-export default App;
+export default App
