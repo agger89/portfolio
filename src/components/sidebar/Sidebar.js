@@ -1,12 +1,39 @@
 import React from 'react'
-
-import { makeStyles } from '@material-ui/core/styles'
+import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles'
 import { Tabs, Tab } from '@material-ui/core'
 import { ArrowForwardIos as ArrowForwardIosIcon } from '@material-ui/icons'
-
 import clsx from 'clsx'
-
 import { data } from './data'
+import { CustomTooltip } from '../Portfolio'
+
+const sidebarTheme = createMuiTheme({
+  overrides: {
+    MuiTab: {
+      root: {
+        backgroundColor: 'transparent !important',
+        '&:hover': {
+          '& .MuiTab-wrapper': {
+            '& svg, & span': {
+              color: '#fff',
+            },
+          },
+        },
+      },
+      labelIcon: {
+        '& .MuiTab-wrapper': {
+          '& > *:first-child': {
+            marginBottom: '0px !important',
+          },
+        },
+      },
+    },
+    MuiSvgIcon: {
+      root: {
+        color: '#A9ABB3',
+      },
+    },
+  },
+})
 
 const useStyles = makeStyles({
   root: {
@@ -26,17 +53,11 @@ const useStyles = makeStyles({
   },
   showTabbar: {
     transform: 'none',
-    '& .makeStyles-arrowIcon-7': {
-      transform: 'rotate(180deg)',
-    },
-    '& .makeStyles-menuTabBarSubtitle-8': {
-      left: '50%',
-      '&:before': {
-        left: '50%',
-      },
-    },
-    '& .makeStyles-menuTabBar-5': {
+    '& > div:nth-child(2)': {
       backgroundColor: '#24282c',
+    },
+    '& svg': {
+      transform: 'rotate(180deg)',
     },
   },
   tabsBlock: {
@@ -50,9 +71,9 @@ const useStyles = makeStyles({
   tabTitle: {
     padding: '50px 10px 10px',
     fontWeight: 700,
-    fontSize: 16,
+    fontSize: 14,
     color: '#686e78',
-    letterSpacing: 0.8,
+    letterSpacing: 3,
     textTransform: 'uppercase',
   },
   tabs: {
@@ -66,21 +87,17 @@ const useStyles = makeStyles({
     minHeight: 44,
     paddingRight: 0,
     paddingBottom: 10,
+    backgroundColor: 'transparent !important',
+    opacity: 1,
     '&:focus': {
       outline: 'none',
       backgroundColor: 'transparent',
     },
     '&:hover': {
-      backgroundColor: '#373A3E',
+      backgroundColor: '#373A3E !important',
       borderRadius: 8,
       transitionDuration: '0.1s',
       transitionTimingFunction: 'linear',
-      '& .makeStyles-tabLabel-16': {
-        color: '#fff',
-      },
-      '& .makeStyles-tabSubLabel-17': {
-        display: 'block',
-      },
     },
     '& .MuiTab-wrapper': {
       justifyContent: 'flex-start',
@@ -91,39 +108,21 @@ const useStyles = makeStyles({
       marginRight: 14,
     },
   },
-  tabLabelBlock: {
-    position: 'relative',
-  },
-  tabLabel: {
-    fontSmoothing: 'antialiased',
-    fontSize: 14,
-    fontWeight: 700,
-    color: '#a9abb3',
-    letterSpacing: 0.32,
-  },
-  tabHoverLabel: {
-    position: 'absolute',
-    top: -34,
-    left: 54,
-    display: 'none',
-    padding: '6px 10px',
+  icon: {
+    width: 24,
+    height: 24,
+    padding: 2,
     backgroundColor: '#fff',
     borderRadius: 5,
-    fontSize: 13,
-    color: '#000',
-    '&:before': {
-      content: '""',
-      display: 'inline-block',
-      width: 0,
-      height: 0,
-      borderStyle: 'solid',
-      borderWidth: 6,
-      borderColor: '#fff transparent transparent transparent',
-      position: 'absolute',
-      bottom: -12,
-      left: '50%',
-      transform: 'translateX(-50%)',
-    },
+  },
+  tabLabel: {
+    marginLeft: 14,
+    fontSmoothing: 'antialiased',
+    fontWeight: 400,
+    fontSize: 14,
+    color: '#a9abb3',
+    letterSpacing: 0.32,
+    textTransform: 'initial',
   },
   sidebarTrigger: {
     position: 'absolute',
@@ -152,33 +151,6 @@ const useStyles = makeStyles({
   arrowIcon: {
     color: '#a9abb3',
   },
-  sidebarTriggerText: {
-    position: 'absolute',
-    top: -36,
-    left: 61,
-    transform: 'translateX(-50%)',
-    display: 'none',
-    padding: '6px 8px',
-    backgroundColor: '#fff',
-    borderRadius: 5,
-    fontSize: 13,
-    color: '#000',
-    fontStyle: 'italic',
-    whiteSpace: 'nowrap',
-    '&:before': {
-      content: '""',
-      display: 'inline-block',
-      width: 0,
-      height: 0,
-      borderStyle: 'solid',
-      borderWidth: 6,
-      borderColor: '#fff transparent transparent transparent',
-      position: 'absolute',
-      bottom: -11,
-      left: 20,
-      transform: 'translateX(-50%)',
-    },
-  },
 })
 
 function a11yProps(index) {
@@ -188,22 +160,16 @@ function a11yProps(index) {
   }
 }
 
-const Sidebar = ({
-  tabValue,
-  onTabValue,
-  showTabbar,
-  onShowTabbar,
-  // onShowLoader,
-}) => {
+const Sidebar = ({ tabValue, onTabValue, showTabbar, onShowTabbar, onLoader }) => {
   const classes = useStyles()
 
   const handleTabValueChange = (event, newValue) => {
-    // onShowLoader(true)
+    onLoader(true)
     onTabValue(newValue)
 
-    // setTimeout(() => {
-    //   setShowLoader(false)
-    // }, 500)
+    setTimeout(() => {
+      onLoader(false)
+    }, 500)
   }
 
   const handleTabbarOpen = () => {
@@ -211,42 +177,49 @@ const Sidebar = ({
   }
 
   return (
-    <div
-      className={clsx(classes.sidebarBlock, {
-        [classes.showTabbar]: showTabbar,
-      })}
-    >
-      <div className={classes.tabsBlock}>
-        <p className={classes.tabTitle}>menu list</p>
-        <Tabs
-          orientation="vertical"
-          variant="scrollable"
-          value={tabValue}
-          onChange={handleTabValueChange}
-          className={classes.tabs}
+    <ThemeProvider theme={sidebarTheme}>
+      <div
+        className={clsx(classes.sidebarBlock, {
+          [classes.showTabbar]: showTabbar,
+        })}
+      >
+        <div className={classes.tabsBlock}>
+          <p className={classes.tabTitle}>menu list</p>
+          <Tabs
+            orientation="vertical"
+            variant="scrollable"
+            value={tabValue}
+            onChange={handleTabValueChange}
+            className={classes.tabs}
+          >
+            {data.map((item, i) => (
+              <CustomTooltip arrow title="View source" placement="top">
+                <Tab
+                  className={classes.tab}
+                  icon={
+                    <img
+                      src={`/static/skills/${item.iconUrl}`}
+                      className={classes.icon}
+                    />
+                  }
+                  label={<span className={classes.tabLabel}>{item.title}</span>}
+                  {...a11yProps(i)}
+                />
+              </CustomTooltip>
+            ))}
+          </Tabs>
+        </div>
+        <CustomTooltip
+          arrow
+          title={showTabbar ? 'Close sidebar' : 'Open sidebar'}
+          placement="top"
         >
-          {data.map((item, i) => (
-            <Tab
-              className={classes.tab}
-              icon={item.icon}
-              label={
-                <span className={classes.tabLabelBlock}>
-                  <span className={classes.tabLabel}>{item.title}</span>
-                  <span className={classes.tabHoverLabel}>View Source</span>
-                </span>
-              }
-              {...a11yProps(i)}
-            />
-          ))}
-        </Tabs>
+          <div className={classes.sidebarTrigger} onClick={() => handleTabbarOpen()}>
+            <ArrowForwardIosIcon className={classes.arrowIcon} />
+          </div>
+        </CustomTooltip>
       </div>
-      <div className={classes.sidebarTrigger} onClick={() => handleTabbarOpen()}>
-        <ArrowForwardIosIcon className={classes.arrowIcon} />
-        <span className={classes.sidebarTriggerText}>
-          {showTabbar ? 'Close sidebar' : 'Open sidebar'}
-        </span>
-      </div>
-    </div>
+    </ThemeProvider>
   )
 }
 

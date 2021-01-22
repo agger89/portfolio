@@ -1,6 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { data } from './data'
+import { CustomTooltip } from '../Portfolio'
 
 const useStyles = makeStyles({
   headerBlock: {
@@ -38,28 +39,9 @@ const useStyles = makeStyles({
     display: 'inline-block',
     color: '#A8ABB3',
     marginLeft: 14,
-    '&:hover': {
-      color: '#fff',
-      '& > span': {
-        display: 'block',
-      },
-    },
   },
   contactIcon: {
     fontSize: 28,
-  },
-  contactText: {
-    position: 'absolute',
-    bottom: -30,
-    left: '50%',
-    transform: 'translateX(-50%)',
-    display: 'none',
-    padding: '4px 12px',
-    backgroundColor: '#fff',
-    borderRadius: 5,
-    fontSize: 13,
-    color: '#000',
-    whiteSpace: 'nowrap',
   },
 })
 
@@ -74,16 +56,17 @@ const Header = () => {
       </div>
       <div className={classes.contactBlock}>
         {data.map((contact, i) => (
-          <a
-            key={i}
-            href={contact.link}
-            className={classes.contact}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className={classes.contactIcon}>{contact.icon}</span>
-            <span className={classes.contactText}>{contact.text}</span>
-          </a>
+          <CustomTooltip arrow title={contact.text} placement="top">
+            <a
+              key={i}
+              href={contact.link}
+              className={classes.contact}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className={classes.contactIcon}>{contact.icon}</span>
+            </a>
+          </CustomTooltip>
         ))}
       </div>
     </div>

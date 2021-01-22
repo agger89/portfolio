@@ -1,21 +1,14 @@
-import React from 'react'
-import {
-  TrendingUp as TrendingUpIcon,
-  DynamicFeed as DynamicFeedIcon,
-  Equalizer as EqualizerIcon,
-} from '@material-ui/icons'
-
 export const data = [
   {
     title: 'Projects',
-    icon: <TrendingUpIcon />,
+    iconUrl: 'react.png',
   },
   {
     title: 'Work Experience',
-    icon: <EqualizerIcon />,
+    iconUrl: 'bootstrap.png',
   },
   {
     title: 'Skills',
-    icon: <DynamicFeedIcon />,
+    iconUrl: 'github.png',
   },
 ]

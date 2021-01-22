@@ -1,5 +1,29 @@
 export const recentData = [
   {
+    imageUrl: 'portfolio.png',
+    name: '포트폴리오',
+    description: '개발한 작업물들 모아놓은 포트폴리오',
+    detailList: [
+      {
+        list: '기술 스택: React, React Hooks, Material-UI',
+      },
+    ],
+    githubUrl: 'https://github.com/agger89/portfolio',
+    createdAt: 2021,
+  },
+  {
+    imageUrl: 'diary.png',
+    name: '다이어리 어플리케이션',
+    description: '서버 개발자(graphql) 1명과 같이 개발중인 사이드 프로젝트',
+    detailList: [
+      {
+        list: '기술 스택: React, React Hooks, Apollo-Client, Typescript, Styled Components',
+      },
+    ],
+    githubUrl: 'https://github.com/agger89/diary',
+    createdAt: 2021,
+  },
+  {
     imageUrl: 'teacher_list.png',
     name: '강사소개 리스트',
     description: '배너 슬라이드와 탭을 이용한 강사소개 리스트',
@@ -16,7 +40,7 @@ export const recentData = [
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    link: 'http://next.weport.co.kr/pass-check',
+    webSiteUrl: 'http://next.weport.co.kr/pass-check',
     createdAt: 2020,
   },
   {
@@ -36,7 +60,7 @@ export const recentData = [
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    link: 'http://next.weport.co.kr/pass-check',
+    webSiteUrl: 'http://next.weport.co.kr/pass-check',
     createdAt: 2020,
   },
   {
@@ -54,12 +78,12 @@ export const recentData = [
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    link: 'http://next.weport.co.kr/pass-check',
+    webSiteUrl: 'http://next.weport.co.kr/pass-check',
     createdAt: 2019,
   },
   {
     imageUrl: 'nextjs_portfolio.png',
-    name: '개인 프로젝트',
+    name: '개인 프로젝트 nextjs',
     description: 'React(NextJS)로 만든 twitter 사이트',
     detailList: [
       {
@@ -77,9 +101,9 @@ export const recentData = [
         list: '배포 - AWS(EC2, Lambda, S3, Route53)',
       },
     ],
-    link: 'http://starcho.com',
+    webSiteUrl: 'http://starcho.com',
     createdAt: 2019,
-    viewOnGithub: 'https://github.com/agger89/choWitter',
+    githubUrl: 'https://github.com/agger89/choWitter',
   },
   {
     imageUrl: 'aipe.png',
@@ -96,7 +120,7 @@ export const recentData = [
         list: 'SCSS 를 이용하여 마크업 스타일링',
       },
     ],
-    link: 'https://www.aipe.io',
+    webSiteUrl: 'https://www.aipe.io',
     createdAt: 2019,
   },
   {
@@ -114,12 +138,12 @@ export const recentData = [
         list: 'SCSS 를 이용하여 마크업 스타일링',
       },
     ],
-    link: 'https://www.3piks.com',
+    webSiteUrl: 'https://www.3piks.com',
     createdAt: 2018,
   },
   {
     imageUrl: 'react_portfolio.png',
-    name: '개인 프로젝트',
+    name: '개인 프로젝트 react',
     description: 'React로 만든 Instagram 사이트',
     detailList: [
       {
@@ -132,9 +156,9 @@ export const recentData = [
         list: '배포 - firebase',
       },
     ],
-    link: 'https://instareact-25862.firebaseapp.com',
+    webSiteUrl: 'https://instareact-25862.firebaseapp.com',
     createdAt: 2018,
-    viewOnGithub: 'https://github.com/agger89/portfolioREACT',
+    githubUrl: 'https://github.com/agger89/portfolioREACT',
   },
   {
     imageUrl: 'puff.png',
@@ -154,14 +178,13 @@ export const recentData = [
         list: 'SCSS를 이용하여 마크업 스타일링',
       },
     ],
-    link:
+    webSiteUrl:
       'https://itunes.apple.com/kr/app/%ED%8D%BC%ED%94%84-puff-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EB%9D%BC%EC%9D%B4%EB%B8%8C/id1227663743?mt=8',
     createdAt: 2018,
   },
   {
-    id: 2,
     imageUrl: 'php_portfolio.png',
-    name: '개인 프로젝트',
+    name: '개인 프로젝트 php',
     description: 'php 기반으로 만든 Instagram 사이트',
     detailList: [
       {
@@ -181,12 +204,11 @@ export const recentData = [
         list: '루트계정 - ID: root@gmail.com / PW: 11111111',
       },
     ],
-    link: 'http://whcnddms1.cafe24.com',
+    webSiteUrl: 'http://whcnddms1.cafe24.com',
     createdAt: 2017,
-    viewOnGithub: 'https://github.com/agger89/portfolioPHP',
+    githubUrl: 'https://github.com/agger89/portfolioPHP',
   },
   {
-    id: 2,
     imageUrl: 'travelmap.png',
     name: 'TRAVELMAP',
     description: '전세계 호텔, 항공, 렌터카, 여행 가격비교 사이트',
@@ -201,11 +223,10 @@ export const recentData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    link: 'http://www.travelmap.co.kr',
+    webSiteUrl: 'http://www.travelmap.co.kr',
     createdAt: 2017,
   },
   {
-    id: 2,
     imageUrl: 'mobile_appliance.png',
     name: 'Mobile Appliance',
     description: '자동차 솔루션 기업 사이트',
@@ -222,11 +243,10 @@ export const recentData = [
     ],
     icon1: 'NOICON',
     icon2: 'NOICON',
-    link: 'http://www.mobileappliance.co.kr',
+    webSiteUrl: 'http://www.mobileappliance.co.kr',
     createdAt: 2017,
   },
   {
-    id: 2,
     imageUrl: 'pontus.png',
     name: 'PONTUS',
     description: '블랙박스 소개 및 고객센터 사이트',
@@ -241,11 +261,10 @@ export const recentData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    link: 'http://www.pontus.co.kr',
+    webSiteUrl: 'http://www.pontus.co.kr',
     createdAt: 2017,
   },
   {
-    id: 2,
     imageUrl: 'sarahan.png',
     name: 'Sarahan',
     description: '화장품 소개 및 판매 사이트',
@@ -260,11 +279,10 @@ export const recentData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    link: 'http://www.sarahan.kr',
+    webSiteUrl: 'http://www.sarahan.kr',
     createdAt: 2017,
   },
   {
-    id: 2,
     imageUrl: 'dental.png',
     name: '문치과병원',
     description: '병원소개 및 예약 사이트',
@@ -279,11 +297,10 @@ export const recentData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    link: 'http://www.moondh.co.kr',
+    webSiteUrl: 'http://www.moondh.co.kr',
     createdAt: 2017,
   },
   {
-    id: 2,
     imageUrl: 'kw_honey.png',
     name: '자연에 쉼',
     description: '벌꿀소개 및 판매 사이트',
@@ -298,12 +315,24 @@ export const recentData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    link: 'http://www.kwhoney.kr',
+    webSiteUrl: 'http://www.kwhoney.kr',
     createdAt: 2017,
   },
 ]
 
 export const reactData = [
+  {
+    imageUrl: 'portfolio.png',
+    name: '포트폴리오',
+    description: '개발한 작업물들 모아놓은 포트폴리오',
+    detailList: [
+      {
+        list: '기술 스택: React, React Hooks, Material-UI',
+      },
+    ],
+    githubUrl: 'https://github.com/agger89/portfolio',
+    createdAt: 2020,
+  },
   {
     imageUrl: 'teacher_list.png',
     name: '강사소개 리스트',
@@ -321,7 +350,7 @@ export const reactData = [
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    link: 'http://next.weport.co.kr/pass-check',
+    webSiteUrl: 'http://next.weport.co.kr/pass-check',
     createdAt: 2020,
   },
   {
@@ -341,7 +370,7 @@ export const reactData = [
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    link: 'http://next.weport.co.kr/pass-check',
+    webSiteUrl: 'http://next.weport.co.kr/pass-check',
     createdAt: 2020,
   },
   {
@@ -359,12 +388,12 @@ export const reactData = [
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    link: 'http://next.weport.co.kr/pass-check',
+    webSiteUrl: 'http://next.weport.co.kr/pass-check',
     createdAt: 2019,
   },
   {
     imageUrl: 'nextjs_portfolio.png',
-    name: '개인 프로젝트',
+    name: '개인 프로젝트 nextjs',
     description: 'React(NextJS)로 만든 twitter 사이트',
     detailList: [
       {
@@ -382,9 +411,9 @@ export const reactData = [
         list: '배포 - AWS(EC2, Lambda, S3, Route53)',
       },
     ],
-    link: 'http://starcho.com',
+    webSiteUrl: 'http://starcho.com',
     createdAt: 2019,
-    viewOnGithub: 'https://github.com/agger89/choWitter',
+    githubUrl: 'https://github.com/agger89/choWitter',
   },
   {
     imageUrl: 'aipe.png',
@@ -401,7 +430,7 @@ export const reactData = [
         list: 'SCSS 를 이용하여 마크업 스타일링',
       },
     ],
-    link: 'https://www.aipe.io',
+    webSiteUrl: 'https://www.aipe.io',
     createdAt: 2019,
   },
   {
@@ -419,12 +448,12 @@ export const reactData = [
         list: 'SCSS 를 이용하여 마크업 스타일링',
       },
     ],
-    link: 'https://www.3piks.com',
+    webSiteUrl: 'https://www.3piks.com',
     createdAt: 2018,
   },
   {
     imageUrl: 'react_portfolio.png',
-    name: '개인 프로젝트',
+    name: '개인 프로젝트 react',
     description: 'React로 만든 Instagram 사이트',
     detailList: [
       {
@@ -437,9 +466,9 @@ export const reactData = [
         list: '배포 - firebase',
       },
     ],
-    link: 'https://instareact-25862.firebaseapp.com',
+    webSiteUrl: 'https://instareact-25862.firebaseapp.com',
     createdAt: 2018,
-    viewOnGithub: 'https://github.com/agger89/portfolioREACT',
+    githubUrl: 'https://github.com/agger89/portfolioREACT',
   },
   {
     imageUrl: 'puff.png',
@@ -459,7 +488,7 @@ export const reactData = [
         list: 'SCSS를 이용하여 마크업 스타일링',
       },
     ],
-    link:
+    webSiteUrl:
       'https://itunes.apple.com/kr/app/%ED%8D%BC%ED%94%84-puff-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EB%9D%BC%EC%9D%B4%EB%B8%8C/id1227663743?mt=8',
     createdAt: 2018,
   },
@@ -467,9 +496,8 @@ export const reactData = [
 
 export const htmlData = [
   {
-    id: 2,
     imageUrl: 'php_portfolio.png',
-    name: '개인 프로젝트',
+    name: '개인 프로젝트 php',
     description: 'php 기반으로 만든 Instagram 사이트',
     detailList: [
       {
@@ -489,12 +517,11 @@ export const htmlData = [
         list: '루트계정 - ID: root@gmail.com / PW: 11111111',
       },
     ],
-    link: 'http://whcnddms1.cafe24.com',
+    webSiteUrl: 'http://whcnddms1.cafe24.com',
     createdAt: 2017,
-    viewOnGithub: 'https://github.com/agger89/portfolioPHP',
+    githubUrl: 'https://github.com/agger89/portfolioPHP',
   },
   {
-    id: 2,
     imageUrl: 'travelmap.png',
     name: 'TRAVELMAP',
     description: '전세계 호텔, 항공, 렌터카, 여행 가격비교 사이트',
@@ -509,11 +536,10 @@ export const htmlData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    link: 'http://www.travelmap.co.kr',
+    webSiteUrl: 'http://www.travelmap.co.kr',
     createdAt: 2017,
   },
   {
-    id: 2,
     imageUrl: 'mobile_appliance.png',
     name: 'Mobile Appliance',
     description: '자동차 솔루션 기업 사이트',
@@ -530,11 +556,10 @@ export const htmlData = [
     ],
     icon1: 'NOICON',
     icon2: 'NOICON',
-    link: 'http://www.mobileappliance.co.kr',
+    webSiteUrl: 'http://www.mobileappliance.co.kr',
     createdAt: 2017,
   },
   {
-    id: 2,
     imageUrl: 'pontus.png',
     name: 'PONTUS',
     description: '블랙박스 소개 및 고객센터 사이트',
@@ -549,11 +574,10 @@ export const htmlData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    link: 'http://www.pontus.co.kr',
+    webSiteUrl: 'http://www.pontus.co.kr',
     createdAt: 2017,
   },
   {
-    id: 2,
     imageUrl: 'sarahan.png',
     name: 'Sarahan',
     description: '화장품 소개 및 판매 사이트',
@@ -568,11 +592,10 @@ export const htmlData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    link: 'http://www.sarahan.kr',
+    webSiteUrl: 'http://www.sarahan.kr',
     createdAt: 2017,
   },
   {
-    id: 2,
     imageUrl: 'dental.png',
     name: '문치과병원',
     description: '병원소개 및 예약 사이트',
@@ -587,11 +610,10 @@ export const htmlData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    link: 'http://www.moondh.co.kr',
+    webSiteUrl: 'http://www.moondh.co.kr',
     createdAt: 2017,
   },
   {
-    id: 2,
     imageUrl: 'kw_honey.png',
     name: '자연에 쉼',
     description: '벌꿀소개 및 판매 사이트',
@@ -606,7 +628,7 @@ export const htmlData = [
         list: 'CSS를 이용하여 마크업 스타일링',
       },
     ],
-    link: 'http://www.kwhoney.kr',
+    webSiteUrl: 'http://www.kwhoney.kr',
     createdAt: 2017,
   },
 ]

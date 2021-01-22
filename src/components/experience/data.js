@@ -9,16 +9,17 @@ export const data = [
         list: 'React-Admin Framework로 관리자 페이지 클라이언트 개발',
       },
       {
-        list: '기존 html, jquery로 되어있는 클라이언트 페이지 react로 재구현',
+        list: '기존 HTML, Javascript 되어있는 클라이언트 페이지 react로 리뉴얼',
       },
       {
-        list: 'apollo-client로 클라이언트 개발',
+        list: 'Apollo-Client로 클라이언트 개발',
       },
       {
         list: 'Material-UI로 스타일 작업',
       },
       {
-        list: '기술 스택: React, Apollo-Client, Typescript, React Hook, Material-UI',
+        list:
+          '기술 스택: React, Apollo-Client, Typescript, React Hook, Material-UI, React-Admin',
       },
     ],
     date: '2019.08 - 2020.12 | 서울시 강남구',

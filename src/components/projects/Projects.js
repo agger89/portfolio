@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
-
 import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles'
 import { Tabs, Tab, Box } from '@material-ui/core'
 import Typography from '@material-ui/core/Typography'
-
 import { reactData, recentData, htmlData } from './data'
 import ProjectsView from './ProjectView'
 import Loader from '../../components/Loader'
 
-const muiTheme = createMuiTheme({
+const projectTheme = createMuiTheme({
   overrides: {
     MuiBox: {
       root: {
@@ -51,6 +49,7 @@ const useStyles = makeStyles({
   filterTabItem: {
     padding: '6px 14px',
     borderRadius: 8,
+    fontSize: 14,
     color: '#A9ABB3',
     cursor: 'pointer',
     '&:hover': {
@@ -92,21 +91,20 @@ function a11yProps(index) {
 
 const Projects = () => {
   const classes = useStyles()
-  const [showLoader, setShowLoader] = useState(false)
+  const [loader, setLoader] = useState(false)
   const [value, setValue] = useState(0)
 
   const handleChange = (event, newValue) => {
-    setShowLoader(true)
-
+    setLoader(true)
     setValue(newValue)
 
-    // setTimeout(() => {
-    //   setShowLoader(false)
-    // }, 500)
+    setTimeout(() => {
+      setLoader(false)
+    }, 500)
   }
 
   return (
-    <ThemeProvider theme={muiTheme}>
+    <ThemeProvider theme={projectTheme}>
       <div className={classes.title}>Projects</div>
       <Tabs
         value={value}
@@ -118,29 +116,27 @@ const Projects = () => {
         <Tab label="react" {...a11yProps(1)} className={classes.filterTabItem} />
         <Tab label="html" {...a11yProps(2)} className={classes.filterTabItem} />
       </Tabs>
-      {/* {showLoader ? (
-        <div className={classes.loaderWrap}>
-          <Loader />
-        </div>
-      ) : ( */}
-      <>
-        <TabPanel value={value} index={0}>
-          <div className={classes.viewWrapper}>
-            <ProjectsView data={recentData} />
-          </div>
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          <div className={classes.viewWrapper}>
-            <ProjectsView data={reactData} />
-          </div>
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-          <div className={classes.viewWrapper}>
-            <ProjectsView data={htmlData} />
-          </div>
-        </TabPanel>
-      </>
-      {/* )} */}
+      {loader ? (
+        <Loader isProject />
+      ) : (
+        <>
+          <TabPanel value={value} index={0}>
+            <div className={classes.viewWrapper}>
+              <ProjectsView data={recentData} />
+            </div>
+          </TabPanel>
+          <TabPanel value={value} index={1}>
+            <div className={classes.viewWrapper}>
+              <ProjectsView data={reactData} />
+            </div>
+          </TabPanel>
+          <TabPanel value={value} index={2}>
+            <div className={classes.viewWrapper}>
+              <ProjectsView data={htmlData} />
+            </div>
+          </TabPanel>
+        </>
+      )}
     </ThemeProvider>
   )
 }

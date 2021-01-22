@@ -1,23 +1,8 @@
 import React from 'react'
-
-import { withStyles, makeStyles } from '@material-ui/core/styles'
-import { Grid, Paper, Typography, Tooltip } from '@material-ui/core'
-
+import { makeStyles } from '@material-ui/core/styles'
+import { Grid, Paper, Typography } from '@material-ui/core'
 import { data } from './data'
-
-const CustomTooltip = withStyles({
-  tooltip: {
-    top: '-10px',
-    padding: '6px 10px',
-    backgroundColor: '#fff',
-    borderRadius: 5,
-    fontSize: 13,
-    color: '#26282C',
-  },
-  arrow: {
-    color: '#fff',
-  },
-})(Tooltip)
+import { CustomTooltip } from '../Portfolio'
 
 const useStyles = makeStyles({
   title: {
@@ -95,9 +80,9 @@ const Experience = () => {
     <>
       <div className={classes.title}>Work Experience</div>
       {data.map((content, i) => (
-        <Paper className={classes.paper} key={i}>
-          <Grid container spacing={2} className={classes.gridBlock}>
-            <CustomTooltip title="View on site" placement="top-start" arrow>
+        <CustomTooltip title="View on site" placement="top-center" arrow>
+          <Paper className={classes.paper} key={i}>
+            <Grid container spacing={2} className={classes.gridBlock}>
               <a
                 href={content.link}
                 target="_blank"
@@ -142,9 +127,9 @@ const Experience = () => {
                   </Grid>
                 </Grid>
               </a>
-            </CustomTooltip>
-          </Grid>
-        </Paper>
+            </Grid>
+          </Paper>
+        </CustomTooltip>
       ))}
     </>
   )
