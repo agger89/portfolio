@@ -101,7 +101,7 @@ export const recentData = [
   {
     imageUrl: 'nextjs_portfolio.png',
     name: '개인 프로젝트 nextjs',
-    description: 'React(NextJS)로 만든 twitter 사이트',
+    description: '인프런 강의영상을 보며 만든 twitter 사이트',
     detailList: [
       {
         list:
@@ -440,7 +440,7 @@ export const reactData = [
   {
     imageUrl: 'nextjs_portfolio.png',
     name: '개인 프로젝트 nextjs',
-    description: 'React(NextJS)로 만든 twitter 사이트',
+    description: '인프런 강의영상을 보며 만든 twitter 사이트',
     detailList: [
       {
         list:
