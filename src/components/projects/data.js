@@ -14,13 +14,14 @@ export const recentData = [
   {
     imageUrl: 'diary.png',
     name: '다이어리 어플리케이션',
-    description: '서버 개발자(graphql) 1명과 같이 개발중인 사이드 프로젝트',
+    description: '서버 개발자(graphql)와 같이 개발중인 사이드 프로젝트',
     detailList: [
       {
         list: '기술 스택: React, React Hooks, Apollo-Client, Typescript, Styled Components',
       },
     ],
     githubUrl: 'https://github.com/agger89/diary',
+    webSiteUrl: 'https://diary-nine.vercel.app/diary',
     createdAt: 2021,
   },
   {
@@ -332,6 +333,19 @@ export const reactData = [
     ],
     githubUrl: 'https://github.com/agger89/portfolio',
     createdAt: 2020,
+  },
+  {
+    imageUrl: 'diary.png',
+    name: '다이어리 어플리케이션',
+    description: '서버 개발자(graphql)와 같이 개발중인 사이드 프로젝트',
+    detailList: [
+      {
+        list: '기술 스택: React, React Hooks, Apollo-Client, Typescript, Styled Components',
+      },
+    ],
+    githubUrl: 'https://github.com/agger89/diary',
+    webSiteUrl: 'https://diary-nine.vercel.app/diary',
+    createdAt: 2021,
   },
   {
     imageUrl: 'teacher_list.png',
