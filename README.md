@@ -1,2 +1,2 @@
-배포 순서
-git push - yarn build - firebase deploy
+배포
+yarn build - firebase deploy
