@@ -26,7 +26,7 @@ export const data = [
   },
   {
     imageUrl: 'neuralbc.jpg',
-    name: 'Neural BC',
+    name: 'Neural BC (현재 서비스 중지)',
     link: 'http://www.neuralbc.com',
     position: 'Front-End Developer',
     workLists: [
@@ -50,7 +50,7 @@ export const data = [
   },
   {
     imageUrl: 'starship.jpg',
-    name: 'Starship Vending-machine corp.',
+    name: 'Starship Vending-machine corp. (현재 서비스 중지)',
     link: 'https://www.insertcoin.me',
     position: 'Front-End Developer',
     workLists: [

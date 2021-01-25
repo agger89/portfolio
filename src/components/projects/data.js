@@ -9,19 +9,28 @@ export const recentData = [
       },
     ],
     githubUrl: 'https://github.com/agger89/portfolio',
+    webSiteUrl: 'https://portfolio-ad858.web.app',
     createdAt: 2021,
   },
   {
     imageUrl: 'diary.png',
-    name: '다이어리 어플리케이션',
-    description: '서버 개발자(graphql)와 같이 개발중인 사이드 프로젝트',
+    name: '다이어리 사이트',
+    description: '서버(graphql) 개발자와 같이 개발중인 사이드 프로젝트',
     detailList: [
       {
-        list: '기술 스택: React, React Hooks, Apollo-Client, Typescript, Styled Components',
+        list:
+          '현재 구현된 화면: 게시글 메인 화면, 댓글 입력 폼, 댓글 삭제 폼, 마이페이지',
+      },
+      {
+        list:
+          '현재 진행중인 기능: 게시글 제목 불러오기, 게시글 작성한 유저 불러오기, 게시글 좋아요 갯수 불러오기, 게시글 댓글 등록, 삭제',
+      },
+      {
+        list:
+          '기술 스택: React, React Hooks, Apollo-Client, Typescript, Styled Components',
       },
     ],
     githubUrl: 'https://github.com/agger89/diary',
-    webSiteUrl: 'https://diary-nine.vercel.app/diary',
     createdAt: 2021,
   },
   {
@@ -33,15 +42,18 @@ export const recentData = [
         list: '클라이언트(Apollo-Client), 어드민(React-Admin) 개발',
       },
       {
+        list: '[클라이언트 화면단] 탭별 카테고리 이동, 배너 슬라이드',
+      },
+      {
         list:
-          '[클라이언트, 어드민 기능] 탭별 강사 추가 및 삭제, 강사 순서 변경, 강사 이미지 및 링크 등록 가능',
+          '[어드민 연동 기능] 탭별 강사 추가 및 삭제, 강사 순서 변경, 강사 이미지 및 링크 등록 가능',
       },
       {
         list:
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    webSiteUrl: 'http://next.weport.co.kr/pass-check',
+    webSiteUrl: 'https://next.weport.co.kr/teacher-list-weport?groupName=None',
     createdAt: 2020,
   },
   {
@@ -53,15 +65,19 @@ export const recentData = [
         list: '클라이언트(Apollo-Client), 어드민(React-Admin) 개발',
       },
       {
+        list: '[클라이언트 화면단] 타이머 화면',
+      },
+      {
         list:
-          '[클라이언트, 어드민 기능] 기수 자동 업데이트 및 자동 업데이트 멈춤, 타이머 날짜 시간 설정',
+          '[어드민 연동 기능] 기수 자동 업데이트 및 자동 업데이트 멈춤, 타이머 날짜 시간 설정',
       },
       {
         list:
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    webSiteUrl: 'http://next.weport.co.kr/pass-check',
+    webSiteUrl:
+      'https://next.weport.co.kr/freepass/timer-banner/weport-main-top-banner',
     createdAt: 2020,
   },
   {
@@ -102,7 +118,7 @@ export const recentData = [
         list: '배포 - AWS(EC2, Lambda, S3, Route53)',
       },
     ],
-    webSiteUrl: 'http://starcho.com',
+    // webSiteUrl: 'http://starcho.com',
     createdAt: 2019,
     githubUrl: 'https://github.com/agger89/choWitter',
   },
@@ -205,7 +221,7 @@ export const recentData = [
         list: '루트계정 - ID: root@gmail.com / PW: 11111111',
       },
     ],
-    webSiteUrl: 'http://whcnddms1.cafe24.com',
+    // webSiteUrl: 'http://whcnddms1.cafe24.com',
     createdAt: 2017,
     githubUrl: 'https://github.com/agger89/portfolioPHP',
   },
@@ -268,7 +284,7 @@ export const recentData = [
   {
     imageUrl: 'sarahan.png',
     name: 'Sarahan',
-    description: '화장품 소개 및 판매 사이트',
+    description: '화장품 소개 및 판매 사이트 (현재 서비스 중지)',
     detailList: [
       {
         list: 'PHP 기반의 사이트 퍼블리싱 작업',
@@ -332,19 +348,28 @@ export const reactData = [
       },
     ],
     githubUrl: 'https://github.com/agger89/portfolio',
+    webSiteUrl: 'https://portfolio-ad858.web.app',
     createdAt: 2020,
   },
   {
     imageUrl: 'diary.png',
-    name: '다이어리 어플리케이션',
-    description: '서버 개발자(graphql)와 같이 개발중인 사이드 프로젝트',
+    name: '다이어리 사이트',
+    description: '서버(graphql) 개발자와 같이 개발중인 사이드 프로젝트',
     detailList: [
       {
-        list: '기술 스택: React, React Hooks, Apollo-Client, Typescript, Styled Components',
+        list:
+          '현재 구현된 화면: 게시글 메인 화면, 댓글 입력 폼, 댓글 삭제 폼, 마이페이지',
+      },
+      {
+        list:
+          '현재 진행중인 기능: 게시글 제목 불러오기, 게시글 작성한 유저 불러오기, 게시글 좋아요 갯수 불러오기, 게시글 댓글 등록, 삭제',
+      },
+      {
+        list:
+          '기술 스택: React, React Hooks, Apollo-Client, Typescript, Styled Components',
       },
     ],
     githubUrl: 'https://github.com/agger89/diary',
-    webSiteUrl: 'https://diary-nine.vercel.app/diary',
     createdAt: 2021,
   },
   {
@@ -356,15 +381,18 @@ export const reactData = [
         list: '클라이언트(Apollo-Client), 어드민(React-Admin) 개발',
       },
       {
+        list: '[클라이언트 화면단] 탭별 카테고리 이동, 배너 슬라이드',
+      },
+      {
         list:
-          '[클라이언트, 어드민 기능] 탭별 강사 추가 및 삭제, 강사 순서 변경, 강사 이미지 및 링크 등록 가능',
+          '[어드민 연동 기능] 탭별 강사 추가 및 삭제, 강사 순서 변경, 강사 이미지 및 링크 등록 가능',
       },
       {
         list:
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    webSiteUrl: 'http://next.weport.co.kr/pass-check',
+    webSiteUrl: 'https://next.weport.co.kr/teacher-list-weport?groupName=None',
     createdAt: 2020,
   },
   {
@@ -376,15 +404,19 @@ export const reactData = [
         list: '클라이언트(Apollo-Client), 어드민(React-Admin) 개발',
       },
       {
+        list: '[클라이언트 화면단] 타이머 화면',
+      },
+      {
         list:
-          '[클라이언트, 어드민 기능] 기수 자동 업데이트 및 자동 업데이트 멈춤, 타이머 날짜 시간 설정',
+          '[어드민 연동 기능] 기수 자동 업데이트 및 자동 업데이트 멈춤, 타이머 날짜 시간 설정',
       },
       {
         list:
           '기술 스택: React-Admin, React, Apollo-Client, React Hooks, Typescript, Material-UI',
       },
     ],
-    webSiteUrl: 'http://next.weport.co.kr/pass-check',
+    webSiteUrl:
+      'https://next.weport.co.kr/freepass/timer-banner/weport-main-top-banner',
     createdAt: 2020,
   },
   {
@@ -425,7 +457,7 @@ export const reactData = [
         list: '배포 - AWS(EC2, Lambda, S3, Route53)',
       },
     ],
-    webSiteUrl: 'http://starcho.com',
+    // webSiteUrl: 'http://starcho.com',
     createdAt: 2019,
     githubUrl: 'https://github.com/agger89/choWitter',
   },
@@ -531,7 +563,7 @@ export const htmlData = [
         list: '루트계정 - ID: root@gmail.com / PW: 11111111',
       },
     ],
-    webSiteUrl: 'http://whcnddms1.cafe24.com',
+    // webSiteUrl: 'http://whcnddms1.cafe24.com',
     createdAt: 2017,
     githubUrl: 'https://github.com/agger89/portfolioPHP',
   },
